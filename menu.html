@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - JavaJam Coffee House</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="javavam.css">
+</head>
+
+<body id="wrapper">
+    <!-- Header with page title -->
+    <header>
+        <h1><strong><em>&nbsp; JavaJam Coffee House Menu</em></strong></h1>
+    </header>
+
+    <!-- Navigation links -->
+    <nav>
+        <a href="index.html">Home</a> &nbsp; &nbsp;
+        <a href="menu.html">Menu</a> &nbsp; &nbsp;
+        <a href="music.html">Music</a> &nbsp; &nbsp;
+        <a href="jobs.html">Jobs</a>
+    </nav>
+
+    <!-- Main content: Menu items -->
+    <main>
+        <h2>Our Coffee Menu</h2>
+        <section>
+            <h3>Hot Beverages</h3>
+            <ul>
+                <li>Mocha Bliss</li>
+                <li>Vanilla Bean Latte</li>
+                <li>Espresso Royale</li>
+            </ul>
+            <h3>Cold Beverages</h3>
+            <ul>
+                <li>Cold Brew Classic</li>
+                <li>Iced Vanilla Coffee</li>
+                <li>Caramel Macchiato</li>
+            </ul>
+            <!-- Add more categories and menu items as needed -->
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <h6>Copyright &copy; <span id="year"></span> JavaJam Coffee House</h6>
+    </footer>
+
+    <!-- JavaScript to update the year dynamically -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

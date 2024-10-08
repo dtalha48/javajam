@@ -1,0 +1,43 @@
+﻿
+body {
+    color: navy;
+    background-color: Gray;
+    background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msOP9.img");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 50px;
+}
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+        h1 {
+            color: white;
+            margin-left: 40px;
+            background-color: sandybrown;
+            line-height: 1.5em;
+        }
+        h2 {
+            color: #8C3826;
+            margin-left: 40px;
+           
+            
+        }
+        p.ridge {
+            border-style: ridge;
+        }
+        nav {
+            text-align: center;
+            font-weight:bolder;
+        }
+footer {
+    background-color: #D2B48C;
+    text-align: center;
+    font-weight: bolder;
+}
+    
