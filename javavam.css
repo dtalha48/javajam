@@ -2,26 +2,33 @@
 body {
     color: navy;
     background-color: Gray;
-    background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msOP9.img");
+    background-image: url("https://images.pexels.com/photos/5562988/pexels-photo-5562988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-weight: bold;
     letter-spacing: 0.1em;
     margin: 50px;
 }
+
 img {
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 30px
+    
 }
 #wrapper {
     width: 80%;
     margin-right: auto;
     margin-right: auto;
     margin-left: auto;
+    height: 600px;
 }
-
+/*
+.floatright {
+ 
+}
+    */
         h1 {
             color: white;
             margin-left: 40px;
@@ -29,8 +36,10 @@ img {
             line-height: 1.5em;
         }
         h2 {
-            color: #8C3826;
+            color: white;
             margin-left: 40px;
+            background-color: sandybrown;
+
            
             
         }
@@ -45,5 +54,6 @@ footer {
     background-color: #D2B48C;
     text-align: center;
     font-weight: bolder;
+    margin-top:400px;
 }
     
