@@ -13,10 +13,6 @@
 
 <body id="wrapper">
     <!-- Header with page title -->
-    <header>
-        <h1><strong><em>&nbsp; JavaJam Coffee House Menu</em></strong></h1>
-    </header>
-
     <!-- Navigation links -->
     <nav>
         <a href="index.html">Home</a> &nbsp; &nbsp;
@@ -25,43 +21,46 @@
         <a href="jobs.html">Jobs</a>
     </nav>
 
+  
 
     <!-- Main content: Menu items -->
     <main>
-        <h2>Are you a singer? Apply for Play Your Music</h2>
-        <img src="images/music.jpg" alt="coffee seeds"
-             width="300" height="450"
-            />
-        
-        <section>
-            <p>
-                we have a stage for you to perform your music. If you are a singer, you can apply to perform at JavaJam Coffee House.
+        <header>
+            <h2><strong><em>&nbsp; Are you a singer? Apply for Play Your Music</em></strong></h2>
+        </header>
 
-            </p>
-            
-            <h3>upcoming concerts</h3>
-            <ul>
-                <li>April 1 2024<br> The Generics</li>
-                <li>April 15 2024<br> The Wailers</li>
-                <li>April 30 2024<br> The Crosbys</li>
-                    
-                        
-               
-            </ul>
-            <h3>ticket pricing </h3>
-            <ul>
-                <li>General Admission: $10.00</li>
-                <li>Reserved Seating: $25.00</li>
-                <li>Front Row Seating: $40.00</li>
-            </ul>
-            <!-- Add more categories and menu items as needed -->
-        </section>
+        <div style="display: flex; align-items: flex-start;">
+            <img src="images/music.jpg" alt="coffee seeds" width="300" height="450" style="float: left; margin-right: 20px;" />
+
+            <section>
+                <p>
+                    We have a stage for you to perform your music. If you are a singer, you can apply to perform at JavaJam Coffee House.
+                </p>
+                <p>
+                    Contact us at <a href="mailto:javajam@java.com">javajam@java.com</a>
+                </p>
+
+                <h3>Upcoming Concerts</h3>
+                <ul>
+                    <li>April 1 2024<br> The Generics</li>
+                    <li>April 15 2024<br> The Wailers</li>
+                    <li>April 30 2024<br> The Crosbys</li>
+                </ul>
+
+                <h3>Ticket Pricing</h3>
+                <ul>
+                    <li>General Admission: $10.00</li>
+                    <li>Reserved Seating: $25.00</li>
+                    <li>Front Row Seating: $40.00</li>
+                </ul>
+
+            </section>
+        </div>
+        <footer>
+            <h6>Copyright &copy; <span id="year"></span> JavaJam Coffee House</h6>
+        </footer>
     </main>
 
-    <!-- Footer section -->
-    <footer>
-        <h6>Copyright &copy; <span id="year"></span> JavaJam Coffee House</h6>
-    </footer>
 
     <!-- JavaScript to update the year dynamically -->
     <script>
