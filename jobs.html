@@ -7,33 +7,34 @@
     <title>Menu - JavaJam Coffee House</title>
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="javavam.css">
-   
-
 </head>
-<body>
+
+<body id="wrapper">
+    <!-- Header with page title -->
+    <!-- Navigation links -->
     <nav>
         <a href="index.html">Home</a> &nbsp; &nbsp;
         <a href="menu.html">Menu</a> &nbsp; &nbsp;
         <a href="music.html">Music</a> &nbsp; &nbsp;
-        <a href="jobs.html">Jobs</a>
+        <a href="jobs.html">Jobs</a> &nbsp; &nbsp;
     </nav>
 
-    <div id="wrapper">
-        <main>
-            <header>
-                <h1><strong><em>&nbsp; &nbsp; &nbsp; &nbsp; JavaJam Coffee House</em></strong></h1>
-            </header>
-            <h1>JavaJam Coffee House Currently Not Hiring</h1>
+    <!-- Main content: Menu items -->
+    <main>
+        <header>
+            <h2><strong><em>&nbsp; we are not hiring </em></strong></h2>
+        </header>
 
+        
+        <footer>
+            <h6>Copyright &copy; <span id="year"></span> JavaJam Coffee House</h6>
+        </footer>
+    </main>
 
-            <footer>
-                <h6>Copyright &copy; <span id="year"></span> JavaJam Coffee House</h6>
-            </footer>
-        </main>
-    </div>
-
-    
-
+    <!-- JavaScript to update the year dynamically -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
