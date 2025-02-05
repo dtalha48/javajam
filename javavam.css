@@ -1,76 +1,81 @@
 ﻿/* Global Styles (Mobile-First Layout) */
 body {
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
+    flex-direction: column;
     color: navy;
-    background-color: #D2B48C; /* Beige background */
+    background-image: url('https://images.pexels.com/photos/5562988/pexels-photo-5562988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-color: #D2B48C;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-weight: bold;
     letter-spacing: 0.1em;
-    margin: 0; /* Remove default browser margin */
+    margin: 0;
 }
 
 #wrapper {
-    /* Remove width and margin styles */
-    padding: 1em; /* Adds spacing */
+    padding: 1em;
 }
 
 header {
-    background-image: url('cup.jpg'); /* Cup image for the header */
+    background-image: url('cup.jpg');
     background-size: cover;
     height: 128px;
-    padding-left: 105px; /* Align header content */
+    padding-left: 105px;
 }
 
 h1 {
-    font-size: 2em; /* Increase font size */
+    font-size: 2em;
     color: navy;
 }
 
 /* Navigation */
 nav {
     display: flex;
-    flex-direction: column; /* Vertical stacking for links */
+    flex-direction: column;
     align-items: center;
-    background-color: #231814; /* Dark background */
+    background-color: #231814;
     margin: 0;
     padding: 0;
     font-size: 1.25em;
 }
 
     nav ul {
-        list-style: none; /* Remove bullet points */
+        list-style: none;
         margin: 0;
         padding: 0;
-        width: 100%; /* Full-width nav items */
+        width: 100%;
     }
 
     nav li {
-        padding: 0.5em 1em; /* Space around links */
-        border-bottom: 1px solid #FEF6C2; /* Separator line */
+        padding: 0.5em 1em;
+        border-bottom: 1px solid #FEF6C2;
     }
 
     nav a {
-        color: #FEF6C2; /* Light text color */
+        color: #FEF6C2;
         text-decoration: none;
     }
 
         nav a:hover {
-            color: rosybrown; /* Hover effect */
+            color: rosybrown;
         }
+
+/* Logo (for large screens only) */
+#nav-logo {
+    display: none;
+}
 
 /* Main Content */
 main {
-    padding: 1em; /* Add spacing */
+    padding: 1em;
 }
 
 h3, h4, p, div, dl {
-    padding: 0 1em; /* Adds uniform left and right spacing */
+    padding: 0 1em;
 }
 
 main ul {
-    padding-left: 2em; /* Indented list */
+    padding-left: 2em;
 }
 
 /* Hero Images */
@@ -109,29 +114,63 @@ footer {
     display: none;
 }
 
-/* Medium Screens */
-@media (min-width: 600px) {
+/* Medium Screens (Tablet) */
+@media (min-width: 600px) and (max-width: 1023px) {
+    header {
+        text-align: center;
+        padding-left: 0; /* Remove left padding */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Slightly smaller than desktop */
+    }
+
     nav {
-        flex-direction: row; /* Horizontal menu */
-        justify-content: space-around; /* Evenly space links */
-        padding: 1em;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
         nav ul {
-            flex-direction: row;
-            align-items: center;
+            flex-wrap: nowrap;
         }
 
-    main {
-        padding: 2em; /* Add more space */
+        nav li {
+            border-bottom: none; /* Remove bottom border for links */
+        }
+
+    #homehero {
+        height: 250px; /* Adjust hero image size */
+        background-image: url('road.jpg');
     }
 
-    #homehero, #heroguitar, #heromugs {
-        height: 300px; /* Larger hero images */
+    #heroguitar {
+        background-image: url('guitar.jpg');
+    }
+
+    #heromugs {
+        background-image: url('threemugs.jpg');
+    }
+
+    #flow, .details {
+        display: flex;
+        flex-direction: row; /* Horizontal layout for tablet */
+    }
+
+    #mobile {
+        display: none; /* Hide mobile version */
+    }
+
+    #desktop {
+        display: inline; /* Show desktop phone number */
+    }
+
+    h4 {
+        margin-left: 5%; /* Slightly smaller margins */
+        margin-right: 5%;
     }
 }
 
-/* Large Screens */
+/* Large Screens (Desktop) */
 @media (min-width: 1024px) {
     body {
         display: grid;
@@ -148,7 +187,7 @@ footer {
 
     nav {
         grid-area: nav;
-        flex-direction: column; /* Vertical menu on large screens */
+        flex-direction: column; /* Vertical menu for desktop */
     }
 
     main {
@@ -160,10 +199,35 @@ footer {
     }
 
     #mobile {
-        display: none; /* Hide mobile phone link */
+        display: none;
     }
 
     #desktop {
-        display: inline; /* Show plain text phone number */
+        display: inline;
+    }
+
+    #nav-logo {
+        content: url('https://i.ibb.co/1TcDMc5/image.png'); /* Logo for desktop */
+        display: block;
+        margin-bottom: 1em;
+        max-width: 150px;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 3em; /* Larger font for desktop */
+    }
+
+    #homehero {
+        height: 300px; /* Larger hero image for desktop */
+        background-image: url('road.jpg');
+    }
+
+    #heroguitar {
+        background-image: url('guitar.jpg');
+    }
+
+    #heromugs {
+        background-image: url('threemugs.jpg');
     }
 }
